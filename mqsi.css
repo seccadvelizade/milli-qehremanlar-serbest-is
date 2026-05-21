@@ -1,0 +1,128 @@
+:root {
+      --qizil: #c8960c;
+      --arxa: #0a0805;
+      --arxa-kart: #111009;
+      --arxa-ikinci: #1a1710;
+      --serhed: #2a2218;
+      --metn-esas: #f0e8d5;
+      --metn-ikinci: #9a8e7e;
+      --metn-soluk: #6a5f50;
+    }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background-color: var(--arxa);
+      color: var(--metn-esas);
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 70px 20px 50px;
+      border-bottom: 1px solid var(--serhed);
+      background: linear-gradient(180deg, #0f0c07 0%, var(--arxa) 100%);
+    }
+
+    .bayrag-zolaqlari {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-bottom: 28px;
+    }
+    .bayrag-zolaqlari span {
+      width: 44px;
+      height: 7px;
+      border-radius: 2px;
+    }
+    .mavi     { background: #0092BC; }
+    .qirmizi  { background: #E8112D; }
+    .yasil    { background: #00B050; }
+
+    header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(30px, 5vw, 56px);
+      font-weight: 900;
+      color: var(--metn-esas);
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+    header h1 span { color: var(--qizil); }
+
+    header p {
+      font-size: 16px;
+      color: var(--metn-soluk);
+      letter-spacing: 0.5px;
+      font-style: italic;
+    }
+
+    .konteyner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    .kart-seti {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .kart {
+      background: var(--arxa-kart);
+      border: 1px solid var(--serhed);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .kart:hover {
+      border-color: var(--qizil);
+      transform: translateY(-4px);
+    }
+
+    .kart-sekil {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+
+    
+
+    .kart-govde { padding: 22px; }
+
+    .kart-rutbe {
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      color: var(--qizil);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .kart-ad {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--metn-esas);
+      margin-bottom: 4px;
+    }
+
+    .kart-il {
+      font-size: 13px;
+      color: var(--metn-soluk);
+      margin-bottom: 14px;
+    }
+
+    .kart-melumat {
+      font-size: 14px;
+      color: var(--metn-ikinci);
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid var(--serhed);
+      color: var(--metn-soluk);
+      font-size: 14px;
+    }
